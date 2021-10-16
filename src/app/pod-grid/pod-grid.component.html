@@ -1,0 +1,17 @@
+<style>
+
+</style>
+
+<div class="wrapper">
+  <ul>
+    <li *ngFor="let show of shows">
+      <div class="podcast-content">
+        <a href="{{ show.url }}">
+          <img src="{{ show.image }}" />
+        </a>
+        <h2>{{ show.title }}</h2>
+        <p>{{ show.description }}</p>
+      </div>
+    </li>
+  </ul>
+</div>
